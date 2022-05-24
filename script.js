@@ -13,6 +13,9 @@ const feelsLikeTemp = document.getElementById("feels-like");
 const iconDescription = document.getElementById("icon-description");
 const humidityText = document.getElementById("humidity");
 
+
+
+// Refactor to use async await
 function weatherFor(location) {
   fetch(
     `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=8cb97e4627dc2c4bc7e9cacc6f2497d5&units=imperial `,
