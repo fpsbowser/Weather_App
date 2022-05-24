@@ -14,7 +14,7 @@ const humidityText = document.getElementById("humidity");
 async function weatherFor(location) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=8cb97e4627dc2c4bc7e9cacc6f2497d5&units=imperial `,
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=8cb97e4627dc2c4bc7e9cacc6f2497d5&units=imperial `,
       { mode: "cors" }
     );
     const json = await response.json();
@@ -30,7 +30,7 @@ async function weatherFor(location) {
     };
     locationHeader.innerText = data.name;
     temperature.innerText = `${Math.round(data.temp)}°F`;
-    icon.src = `http://openweathermap.org/img/wn/${data.icon}@2x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${data.icon}@2x.png`;
     highTemp.innerText = `High: ${Math.round(data.high)}°F`;
     lowTemp.innerText = `Low: ${Math.round(data.low)}°F`;
     iconDescription.innerText = `${data.description}`;
