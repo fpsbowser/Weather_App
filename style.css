@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgba(241, 241, 201, 0.801);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 15px;
+  border: solid 2px black;
+  width: 30em;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#location-text {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.temperature-container {
+  display: grid;
+  width: 27em;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#temperature-text {
+  font-size: 3.5rem;
+  grid-column: span 2;
+  /* text-align: center; */
+}
+
+#feels-like {
+  grid-column: span 2;
+}
+
+#input_form {
+  display: grid;
+  justify-content: center;
+}
+
+#input {
+  width: 25em;
+  height: 2em;
+  border-radius: 15px;
+  border: solid 2px black;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
